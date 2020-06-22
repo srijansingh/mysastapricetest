@@ -1,0 +1,24 @@
+.drawer{
+    position:fixed;
+    margin-top:4rem;
+    height:90%;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    transition:3s ease;
+
+}
+.drawer .list{
+    max-width:250px;
+    width:100%;
+    height:100%;
+    background:white;
+}
+
+.drawer .blank{
+    width:100%;
+    height:100%;
+    background:#d6d4d4;
+    opacity:0.5;
+
+}
