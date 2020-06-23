@@ -36,7 +36,7 @@ class Search extends Component {
         })
 
         console.log("SearchItem : "+this.state.searchItem)
-        fetch('/user/search/active', {
+        fetch('https://server.rittzyserver.tk/user/search/active', {
             method: "POST",
             headers: {
                 "Accept": "application/json",

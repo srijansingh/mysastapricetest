@@ -17,7 +17,7 @@ class CategoryProduct extends Component {
             isLoading : true
         })
 
-        fetch('/user/category/'+this.props.match.params.category, {
+        fetch('https://server.rittzyserver.tk/user/category/'+this.props.match.params.category, {
             method: "GET",
             headers: {
                 "Accept": "application/json",

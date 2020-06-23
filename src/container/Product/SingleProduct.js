@@ -30,7 +30,7 @@ export default class SingleProduct extends Component {
             isLoading : true
         })
 
-        fetch('/user/product/'+this.props.match.params._id, {
+        fetch('https://server.rittzyserver.tk/user/product/'+this.props.match.params._id, {
             method: "GET",
             headers: {
                 "Accept": "application/json",
@@ -59,7 +59,7 @@ export default class SingleProduct extends Component {
             })
 
         
-            fetch('/user/compare/product', {
+            fetch('https://server.rittzyserver.tk/user/compare/product', {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json'

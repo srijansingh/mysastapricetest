@@ -3,7 +3,7 @@ import * as ActionTypes from './actionTypes';
 export const fetchCategory = () => (dispatch) => {
     dispatch(categoryLoading(true));
 
-   return fetch('/user/category')
+   return fetch('https://server.rittzyserver.tk/user/category')
    .then(response => response.json())
    .then(category => {
        console.log(category.category)
@@ -34,7 +34,7 @@ export const addCategory =(category) =>({
 export const fetchCategoryProduct = (categoryId) => (dispatch) => {
     dispatch(categoryProductLoading(true));
     
-   return fetch('http://localhost:8080/user/category/'+ categoryId)
+   return fetch('https://server.rittzyserver.tk/user/category/'+ categoryId)
    .then(res => res.json())
    .then(response => {
       console.log(response)
