@@ -31,7 +31,7 @@ componentDidMount(){
     });
 
 
-    fetch('/user/category', {
+    fetch('https://server.rittzyserver.tk/user/category', {
         method: "GET",
         headers: {
             "Accept": "application/json",
